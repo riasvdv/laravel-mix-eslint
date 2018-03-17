@@ -1,0 +1,29 @@
+{
+  "name": "laravel-mix-eslint",
+  "version": "0.1.0",
+  "description": "A Laravel Mix extension for Eslint loader support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rias500/laravel-mix-eslint.git"
+  },
+  "keywords": [
+    "laravel",
+    "laravel mix",
+    "mix",
+    "eslint",
+    "webpack"
+  ],
+  "author": "Rias Van der Veken",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rias500/laravel-mix-eslint/issues"
+  },
+  "homepage": "https://github.com/rias500/laravel-mix-eslint#readme",
+  "peerDependencies": {
+    "laravel-mix": "^2.1.7"
+  }
+}
