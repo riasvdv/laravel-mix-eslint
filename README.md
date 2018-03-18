@@ -1,3 +1,10 @@
+<p align="center">
+<a href="https://www.npmjs.com/package/laravel-mix-eslint"><img src="https://img.shields.io/npm/v/laravel-mix-eslint.svg" alt="NPM"></a>
+<a href="https://npmcharts.com/compare/laravel-mix-eslint?minimal=true"><img src="https://img.shields.io/npm/dt/laravel-mix-eslint.svg" alt="NPM"></a>
+<a href="https://www.npmjs.com/package/laravel-mix-eslint"><img src="https://img.shields.io/npm/l/laravel-mix-eslint.svg" alt="NPM"></a>
+</p>
+
+
 # Laravel Mix Eslint
 
 This extension provides instant Eslint support to your Mix (v2.1 and up) builds.
