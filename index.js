@@ -6,7 +6,7 @@ class Eslint {
             Dependencies have been installed. Please run "npm run dev" again.
         `;
 
-        return ['eslint', 'eslint-loader'];
+        return ['eslint', 'eslint-loader', 'eslint-plugin-vue'];
     }
 
     register(options = {}) {
