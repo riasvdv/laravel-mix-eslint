@@ -6,7 +6,7 @@ class Eslint {
             Dependencies have been installed. Please run "npm run dev" again.
         `;
 
-        return ['eslint', 'eslint-loader'];
+        return ['eslint', 'eslint-loader', 'eslint-plugin-vue'];
     }
 
     register(options = {}) {
@@ -16,7 +16,7 @@ class Eslint {
     webpackRules() {
         return {
             enforce: "pre",
-            test: /\.js$/,
+            test: /\.(js|vue)$/,
             exclude: /node_modules/,
             loader: "eslint-loader",
             options: this.options,
