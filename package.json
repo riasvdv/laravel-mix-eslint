@@ -1,6 +1,6 @@
 {
   "name": "laravel-mix-eslint",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "description": "A Laravel Mix extension for Eslint loader support.",
   "main": "index.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/rias500/laravel-mix-eslint#readme",
   "peerDependencies": {
-    "laravel-mix": "^2.1.7"
+    "laravel-mix": ">=2.1.7"
   }
 }
