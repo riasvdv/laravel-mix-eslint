@@ -1,27 +1,27 @@
-let mix = require('laravel-mix');
+let mix = require('laravel-mix')
+const ESLintPlugin = require('eslint-webpack-plugin')
 
 class Eslint {
-    dependencies() {
-        this.requiresReload = `
-            Dependencies have been installed. Please run "npm run dev" again.
-        `;
+  dependencies() {
+    this.requiresReload =
+      'Dependencies have been installed. Please run "npm run dev" again.'
 
-        return ['eslint', 'eslint-loader', 'eslint-plugin-vue'];
-    }
+    return ['eslint', 'eslint-webpack-plugin', 'eslint-plugin-vue']
+  }
 
-    register(options = {}) {
-        this.options = options;
-    }
+  register(options = {}) {
+    this.options = options
+  }
 
-    webpackRules() {
-        return {
-            enforce: "pre",
-            test: /\.(js|vue)$/,
-            exclude: /node_modules/,
-            loader: "eslint-loader",
-            options: this.options,
-        };
-    }
+  webpackPlugins() {
+    return [
+      new ESLintPlugin({
+        extensions: ['js', 'vue'],
+        fix: true,
+        ...this.options
+      })
+    ]
+  }
 }
 
-mix.extend('eslint', new Eslint());
+mix.extend('eslint', new Eslint())
