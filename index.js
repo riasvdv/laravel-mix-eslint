@@ -17,7 +17,6 @@ class Eslint {
     return [
       new ESLintPlugin({
         extensions: ['js', 'vue'],
-        fix: true,
         ...this.options
       })
     ]

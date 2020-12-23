@@ -26,7 +26,7 @@ require('laravel-mix-eslint')
 mix
   .js('resources/assets/js/app.js', 'public/js')
   .eslint({
-    fix: false,
+    fix: true,
     extensions: ['js']
     //...
   })
